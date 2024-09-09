@@ -7,7 +7,7 @@ namespace RedactionService.Controllers
     [Route("redact")]
     public class RedactionController : ControllerBase
     {       
-        private string text_for_redaction = "A dog, a monkey or a dolphin are all mammals.A snake, however, is not a mammal, it is a reptile. Who can say what a DogSnake is?";
+        private string text_for_redaction = "A dog, a monkey or a dolphin are all mammals. A snake, however, is not a mammal, it is a reptile. Who can say what a DogSnake is?";
         private string? get_response_text = string.Empty;
         private readonly ILogger<RedactionController> _logger;
         private readonly IConfiguration _config;
